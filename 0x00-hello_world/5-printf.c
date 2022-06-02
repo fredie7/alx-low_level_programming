@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * mainn - first point
+ * main - first point
  * Return: always 0
 */
 int main(void)
