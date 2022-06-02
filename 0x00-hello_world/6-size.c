@@ -2,24 +2,33 @@
 
 int main(void){
   
-    int i;
+  char char_capacity;
   
-    double d;
+  int int_capacity;
   
-    char c;
+  long int longInt_capacity;
   
-    float f;
+  long long int longLongInt_capacity;
+  
+  float float_capacity;
   
 
   
-    printf("Size of a int: %lu byte(s)\n", (unsigned long)sizeof(i));
+  printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(char_capacity));
   
-    printf("Size of a double: %lu byte(s)\n", (unsigned long)sizeof(d));
+  printf("Size of a int: %lu byte(s)\n", (unsigned long)sizeof(int_capacity));
   
-    printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+  printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(longInt_capacity));
   
-    printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+  printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(longLongInt_capacity));
+  
+  printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(float_capacity));
+  
+
+  
+
   
   return 0;
   
 }
+
