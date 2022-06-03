@@ -7,10 +7,10 @@
 #include <stdio.h>
 int main(void)
 {
-int num;
-while (num < 16)
+int hexNum;
+while (hexNum < 16)
 {
-printf("%d", num);
+printf("%x", hexNum);
 num++;
 }
 putchar('\n');
