@@ -11,7 +11,7 @@ int hexNum;
 while (hexNum < 16)
 {
 printf("%x", hexNum);
-num++;
+hexNum++;
 }
 putchar('\n');
 return (0);
