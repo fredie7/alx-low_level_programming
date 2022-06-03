@@ -7,7 +7,7 @@
 #include <stdio.h>
 int main(void)
 {
-int num,
+int num;
 while (num < 10)
 {
 printf("%d\n", num);
