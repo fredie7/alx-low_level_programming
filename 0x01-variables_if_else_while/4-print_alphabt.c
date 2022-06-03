@@ -5,23 +5,18 @@
  * main - first point
  * Return: always 0
  */
-int main(void){
-char alphabet = 'a';
-while(alphabet <= 'd'){
-putchar(alphabet);
-alphabet++;
-}
-alphabet = 'f';
-while (alphabet <= 'p')
+int main(void)
 {
-putchar(alphabet);
-alphabet++;
-}
-alphabet = 'r';
+char alphabet;
+alphabet = 'a';
 while (alphabet <= 'z')
 {
+if (alphabet != 'e' && alphabet != 'q')
+{
 putchar(alphabet);
+}
 alphabet++;
 }
-return 0;
+putchar('/n');
+return (0);
 }
