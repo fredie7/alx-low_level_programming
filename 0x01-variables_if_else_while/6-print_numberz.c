@@ -8,10 +8,9 @@
 int main(void)
 {
 int num;
-long alpha = '0';
 while (num < 10)
 {
-putchar((num % 10) + alpha);
+putchar((num % 10) + '0');
 num++;
 }
 putchar('\n');
