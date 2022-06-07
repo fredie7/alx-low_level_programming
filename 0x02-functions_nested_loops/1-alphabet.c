@@ -3,7 +3,7 @@
  *main - first point
  * Return: always 0
  */
-print_alphabet_x10(void)
+void print_alphabet(void)
 {
 char alphabet;
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
