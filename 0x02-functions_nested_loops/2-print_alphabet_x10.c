@@ -10,11 +10,10 @@ int i;
 char alphabet;
 for(i = 0; i <= 10; i++)
 {
-putchar('\n');
+_putchar('\n');
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
 _putchar(alphabet);
 }
 }
-_putchar('\n');
 }
