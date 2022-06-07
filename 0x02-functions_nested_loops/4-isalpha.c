@@ -5,7 +5,7 @@
  * Description: checks for upper case letters.
  * Return: 1 if alphabet is upper case. 0 otherwise
  **/
-int _isupper(int alphabet)
+int _isalpha(int alphabet)
 {
 return (alphabet >= 'A' && alphabet <= 'Z');
 }
