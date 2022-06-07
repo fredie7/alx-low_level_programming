@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -10,7 +10,7 @@ init main(void){
 char num[] = "_putchar";
 int i;
 for(i=0;i<8;i++){
-_putchat(num[i]);
+_putchar(num[i]);
 }
 putchar('\n');
 return(0);
