@@ -1,4 +1,5 @@
 #include "main.h"
+#nclude <ctype.h>
 /**
  * _isupper - checks for upper case letters
  * @alphabet: the character to check for upper case letters
@@ -7,5 +8,5 @@
  **/
 int _isalpha(int alphabet)
 {
-	return (isalpha(alphabet));
+return (isalpha(alphabet));
 }
