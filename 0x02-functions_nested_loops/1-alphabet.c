@@ -1,12 +1,9 @@
 #include "main.h"
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 /**
- * main - first point
+ *main - first point
  * Return: always 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 char alphabet;
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
