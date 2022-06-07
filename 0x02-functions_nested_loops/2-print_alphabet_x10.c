@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_alphabet - Print letters multiple times
- * Description: Print letters multiple times
- * Return: void
+ * main - check the code
+ * Return: Always 0.
  */
 void print_alphabet_x10(void)
 {
