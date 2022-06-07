@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * _isalpha - checks for upper case letters
  * @num: the character to check for upper case letters
