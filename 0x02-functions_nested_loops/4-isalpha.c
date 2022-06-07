@@ -8,5 +8,5 @@
  **/
 int _isalpha(int alphabet)
 {
-return (isalpha(alphabet));
+return (isalpha(alphabet) && isdigit(alphabet));
 }
