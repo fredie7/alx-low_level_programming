@@ -9,6 +9,7 @@
 
 int _abs(int num)
 {
+int abs;
 return (abs(num));
 }
 
