@@ -7,5 +7,5 @@
  **/
 int _isalpha(int alphabet)
 {
-return (alphabet >= 'A' && alphabet <= 'Z');
+return ((alphabet >= 'A' && alphabet <= 'Z') || (alphabet >= 'a' && alphabet <= 'b'));
 }
