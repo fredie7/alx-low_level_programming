@@ -1,8 +1,11 @@
 #include "main.h"
+
 /**
- *main - first point
- * Return: always 0
+ * print_alphabet - Print lower case letters
+ * Description: Print lower case letters
+ * Return: void
  */
+
 void print_alphabet(void)
 {
 char alphabet;
