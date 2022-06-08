@@ -1,19 +1,31 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
 /**
- * void print_to_98 - Prints all natural numbers before 98
- * @c: the character to check for
- * Description: Prints all natural numbers before 98
- * Return: all natural numbers before 98
- **/
-void print_to_98(int c)
+ * print_to_98 - prints all natural numbers from n to 98,
+ * followed by a new line
+ * @num: print from this number
+ */
+void print_to_98(int num)
 {
-int i;
-i = 0;
-while (i<c){
-printf("%d",i);
-printf("%c",' ');
-printf("%c",',');
-i++;
+int a, b;
+if (num <= 98)
+{
+for (a = num; a <= 98; a++)
+{
+if (a != 98)
+printf("%d, ", a);
+else if (a == 98)
+printf("%d\n", a);
+}
+} else if (num >= 98)
+{
+for (b = num; b >= 98; b--)
+{
+if (b != 98)
+printf("%d, ", b);
+else if (b == 98)
+printf("%d\n", b);
+}
 }
 }
