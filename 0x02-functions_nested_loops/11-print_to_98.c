@@ -1,5 +1,5 @@
 #include "main.h"
-#include <studio.h>
+#include <stdio.h>
 /**
  * void print_to_98 - Prints all natural numbers before 98
  * @c: the character to check for
