@@ -18,7 +18,7 @@ if (b < 4000000 && (b % 2) == 0)
 {
 result = result + b;
 }
-next = b + k;
+next = b + c;
 b = c;
 c = next;
 }
