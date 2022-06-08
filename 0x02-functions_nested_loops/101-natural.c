@@ -15,7 +15,7 @@ for (start = 0; start < 1024; ++start)
 {
 if ((start % 3) == 0 || (start % 5) == 0)
 {
-result = result + i;
+result = result + start;
 }
 }
 printf("%i\n", result);
