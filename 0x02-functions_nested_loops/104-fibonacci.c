@@ -14,7 +14,7 @@ c = 2;
 printf("%lu", b);
 for (a = 1; a < 91; a++)
 {
-printf(", %lu", k);
+printf(", %lu", c);
 c = c + b;
 b = c - b;
 }
