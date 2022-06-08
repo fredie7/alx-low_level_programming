@@ -15,9 +15,9 @@ for (start = 0; start < 1024; ++start)
 {
 if ((start % 3) == 0 || (start % 5) == 0)
 {
-sum = sum + i;
+result = result + i;
 }
 }
-printf("%i\n", sum);
+printf("%i\n", result);
 return (0);
 }
