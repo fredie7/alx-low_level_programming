@@ -11,9 +11,9 @@ int b,
 int c;
 if (num >= 0 && num <= 15)
 {
-for (a = 0; a <= n; a++)
+for (a = 0; a <= num; a++)
 {
-for (b = 0; b <= n; b++)
+for (b = 0; b <= num; b++)
 {
 result = b * a;
 if (b == 0)
