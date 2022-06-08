@@ -17,7 +17,7 @@ return (1);
 {_putchar(48);
 return (0);
 } else if (num < 0)
-{putchar('-');
+{_putchar('-');
 }
 return (-1);
 }
