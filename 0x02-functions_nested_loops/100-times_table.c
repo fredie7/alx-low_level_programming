@@ -6,8 +6,8 @@
  */
 void print_times_table(int num)
 {
-int a,
-int b,
+int a;
+int b;
 int c;
 if (num >= 0 && num <= 15)
 {
