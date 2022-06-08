@@ -12,8 +12,8 @@ int i;
 i = 0;
 while (i<c){
 printf("%d",i);
-putchar(44);
-putchar(32);
+printf("%c",' ');
+prinf("%c",',');
 i++;
 }
 }
