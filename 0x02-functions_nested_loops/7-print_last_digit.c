@@ -1,11 +1,18 @@
 #include "main.h"
+
 /**
- * _int print_last_digit(int) - checks for lower case character
- * @c: the character to check for
- * Description: checks for lowercase character.
- * Return: 1 if c is lower case. 0 otherwise
- **/
-int print_last_digit(int c)
+ * print_last_digit - prints the last digit of a number
+ * @num: the int to extract the last digit from
+ * Return: value of the last digit
+ */
+int print_last_digit(int num)
 {
-return (c % 10);
-}
+int result;
+if (num < 0)
+num = -num;
+result = num % 10;
+if (result < 0)
+result = -result;
+_putchar(result + '0');
+return (result);
+}}
