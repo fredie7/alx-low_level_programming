@@ -1,10 +1,10 @@
 #include "main.h"
 #include <math.h>
 /**
- * _isalpha - checks for upper case letters
- * @num: the character to check for upper case letters
- * Description: checks for upper case letters.
- * Return: 1 if alphabet is upper case. 0 otherwise
+ * _abs - find absolute values
+ * @num: the character to heck for absolute values
+ * Description: checks for absolute values.
+ * Return: absolute values
  **/
 
 int _abs(int num)
