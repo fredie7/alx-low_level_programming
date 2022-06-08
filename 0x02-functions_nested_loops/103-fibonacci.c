@@ -16,7 +16,7 @@ for (a = 1; a <= 33; ++a)
 {
 if (b < 4000000 && (b % 2) == 0)
 {
-resukt = result + b;
+result = result + b;
 }
 next = b + k;
 b = c;
