@@ -24,7 +24,8 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar(z + '0');
-} else if (z >= 10)
+} 
+else if (z >= 10)
 {
 _putchar(',');
 _putchar(' ');
