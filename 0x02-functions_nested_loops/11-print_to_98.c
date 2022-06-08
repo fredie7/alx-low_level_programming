@@ -11,7 +11,7 @@ void print_to_98(int c)
 int i;
 i = 0;
 while (i<c){
-prntf("%d",i);
+printf("%d",i);
 putchar(44);
 putchar(32);
 i++;
