@@ -18,7 +18,8 @@ printf("%d, ", a);
 else if (a == 98)
 printf("%d\n", a);
 }
-} else if (num >= 98)
+}
+else if (num >= 98)
 {
 for (b = num; b >= 98; b--)
 {
