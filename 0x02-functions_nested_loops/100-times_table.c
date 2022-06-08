@@ -15,7 +15,7 @@ for (a = 0; a <= num; a++)
 {
 for (b = 0; b <= num; b++)
 {
-result = b * a;
+c = b * a;
 if (b == 0)
 {
 _putchar(c + '0');
