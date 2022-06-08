@@ -9,8 +9,7 @@ void print_to_98(int c)
 {
 int i;
 i = 0;
-int n = 99;
-while(i<n){
+while (i<c){
 _putchar((i % 100) + '0');
 _putchar(44);
 _putchar(32);
