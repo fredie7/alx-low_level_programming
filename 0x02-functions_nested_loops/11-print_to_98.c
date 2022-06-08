@@ -13,7 +13,7 @@ i = 0;
 while (i<c){
 printf("%d",i);
 printf("%c",' ');
-prinf("%c",',');
+printf("%c",',');
 i++;
 }
 }
