@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_numbers - prints numbers
  * Description: prints numbers
