@@ -9,7 +9,8 @@ void print_line(int a)
 if (a <= 0)
 {
 _putchar('\n');
-} else
+}
+else
 {
 int z;
 for (z = 1; z <= n; z++)
