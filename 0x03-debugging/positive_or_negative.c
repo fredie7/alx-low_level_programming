@@ -13,7 +13,7 @@ return (0);
 }
 /**
  * positive_or_negative - checks and prints numbers positive or negative
- *
+ * @i: accepts integer values.
  * Return: void
 */
 void positive_or_negative(int i)
