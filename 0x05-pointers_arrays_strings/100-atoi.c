@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atoi -  convert a string to an integer.
+ * _atoi - converts a string to an integer.
  * @s: input string.
  * Return: integer.
  */
@@ -27,5 +27,5 @@ for (i = num - temp; i < num; i += 1)
 a = a + ((*(s + i) - 48) * m);
 m /= 10;
 }
-return (a * b);
+return (a *b);
 }
