@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
- *puts_half - prints half of a string, followed by a new line
+ *puts_half - a function that prints half of a string.
  *@str: value to be evaluate.
  *Return: not.
  */
 void puts_half(char *str)
 {
 int word_length = 0;
-char *y = str;
+char *a = str;
 int n;
-while (*y != '\0')
+while (*a != '\0')
 {
-y++;
+a++;
 word_length++;
 }
 if (word_length % 2 == 0)
