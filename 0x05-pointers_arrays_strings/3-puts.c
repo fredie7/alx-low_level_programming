@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  *_puts - prints a string, followed by a new line, to stdout.
@@ -8,6 +8,6 @@
  */
 void _puts(char *str)
 {
-_putchar(*str + '0');
+puts(str);
 _putchar('\n');
 }
