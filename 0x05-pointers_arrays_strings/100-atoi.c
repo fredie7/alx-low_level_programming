@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atoi -  a program that generates random valid passwords.
+ * _atoi -  convert a string to an integer.
  * @s: input string.
  * Return: integer.
  */
