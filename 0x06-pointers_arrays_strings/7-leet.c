@@ -3,40 +3,25 @@
 #include <string.h>
 /**
  *leet - a function that encodes a string into 1337.
- *@s: sample string to be encoded.
- *Return: s
+ *@n: sample string to be encoded.
+ *Return: n
  */
-char *leet(char *s)
+char *leet(char *n)
 {
-int len;
-int i;
-len = strlen(s);
-for (i = 0; i < len; i++)
+int a;
+int b;
+char s1[] = "aAeEoOtTlL";
+char s2[] = "4433007711";
+for (a = 0; n[a] != '\0'; a++)
 {
-if (s[i] == 'a' || s[i] == 'A')
+for (b = 0; b < 10; b++)
 {
-s[i] = '4';
-}
-else if (s[i] == 'e' || s[i] == 'E')
+if (n[a] == s1[b])
 {
-s[i] = '3';
-}
-else if (s[i] == 'o' || s[i] == 'O')
-{
-s[i] = '0';
-}
-else if (s[i] == 't' || s[i] == 'T')
-{
-s[i] = '7';
-}
-else if (s[i] == 'l' || s[i] == 'L')
-{
-s[i] = '1';
-}
-else
-{
-s[i] = ' ';
+n[a] = s2[b];
 }
 }
-return (s);
 }
+return (n);
+}
+
