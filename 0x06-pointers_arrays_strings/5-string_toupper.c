@@ -4,19 +4,18 @@
 /**
  *char *string_toupper -  a function that changes all
  *lowercase letters of a string to uppercase.
- *@p:value to be evaluate.
- *Return: not.
+ *@n:value to be evaluate.
+ *Return: n
  */
-char *string_toupper(char *p)
+char *string_toupper(char *n)
 {
 int i;
-for (i = 0; p[i] != '\0'; i++)
+for (i = 0; n[i] != '\0'; i++)
 {
-if (p[i] >= 'a' && p[i] <= 'z')
+if (n[i] >= 'a' && n[i] <= 'z')
 {
-p[i] = p[i] - 32;
+n[i] = n[i] - 32;
 }
 }
-printf("%s", p);
-return (0);
+return (n);
 }
