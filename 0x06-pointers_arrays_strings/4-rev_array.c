@@ -5,7 +5,7 @@
  *content of an array of integers.
  *@a: array of elements.
  *@n: number of elements of the array
- *Return: not.
+ *Return: void.
  */
 void reverse_array(int *a, int n)
 {
