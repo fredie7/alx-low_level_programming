@@ -3,36 +3,41 @@
 
 /**
  * cap_string - function that capitalizes all words of a string.
- * @s: pointer
+ * @a: pointer
  *
- * Return: 0
+ * Return: string
  */
 
-char *cap_string(char *s)
+char *cap_string(char *a)
 {
 int i;
-for (i = 0; s[i]; ++i)
+i = 0;
+if (a[0] >= 'a' && a[0] <= 'z')
 {
-if (i == 0)
+a[0] = a[0] - 32;
+}
+for (i = 0; a[i] != '\0'; i++)
 {
-if (s[i] >= 'a' && s[i] <= 'z')
+switch (a[i])
 {
-s[i] = s[i] - 32;
-printf("%c", s[i]);
+case ',':
+case ';':
+case '.':
+case '!':
+case '?':
+case '"':
+case '(':
+case ')':
+case '{':
+case '}':
+case ' ':
+case '\n':
+case '\t':
+if (a[i + 1] > 96 && a[i + 1] < 123)
+{
+a[i + 1] = a[i + 1] - 32;
 }
 }
-else if (s[i - 1] == ' ')
-{
-if (s[i] >= 'a' && s[i] <= 'z')
-{
-s[i] = s[i] - 32;
-printf("%c", s[i]);
 }
-}
-else
-{
-printf("%c", s[i]);
-}
-}
-return (0);
+return (a);
 }
