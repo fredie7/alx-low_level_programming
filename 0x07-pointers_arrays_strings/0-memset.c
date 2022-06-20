@@ -11,5 +11,5 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-return (memset(s + n, b, b * sizeof(char)));
+return (memset(s + n, b, b * sizeof(s)));
 }
