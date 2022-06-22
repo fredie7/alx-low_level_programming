@@ -7,7 +7,7 @@
  */
 int primeNumber(int i, int j)
 {
-if (i < 2 || j % i == 2)
+if (j < 2 || j % i == 0)
 {
 return (0);
 }
