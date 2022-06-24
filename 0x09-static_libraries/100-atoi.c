@@ -27,5 +27,5 @@ else if (s[a - 1] >= 0 + '0' && s[a - 1] < 10 + '0')
 break;
 }
 }
-return (num * neg);
+return (num *neg);
 }
