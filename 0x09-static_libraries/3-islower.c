@@ -7,18 +7,17 @@
  * Return: 0
  */
 
-char *_strncpy(char *dest, char *src, int n)
+#include "main.h"
+/**
+ * _islower - a function that checks for lowercase character
+ * @c: character to check
+ * Return: 1 if int c is lowercase, 0 if otherwise
+ */
+
+int _islower(int c)
 {
-int a = 0;
-while (a < n && *(src + a))
-{
-*(dest + a) = *(src + a);
-a++;
-}
-while (a < n)
-{
-*(dest + a) = '\0';
-a++;
-}
-return (dest);
+if (c >= 'a' && c <= 'z')
+return (1);
+else
+return (0);
 }
