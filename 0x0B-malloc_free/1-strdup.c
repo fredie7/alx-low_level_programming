@@ -19,7 +19,7 @@ return (NULL);
 }
 for (num = 0; str[num] != '\0'; num++)
 ;
-arr = malloc(num * sizeof(char));
+arr = malloc((num * sizeof(char)) + 1);
 if (arr == NULL)
 {
 return (NULL);
