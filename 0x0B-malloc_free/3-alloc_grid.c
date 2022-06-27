@@ -22,7 +22,7 @@ if (arr == NULL)
 {
 return (NULL);
 }
-while (i < height)
+for (i = 0; i < height; i++)
 {
 *(arr + i) = (int *)malloc(width * sizeof(int));
 if (*(arr + i) == NULL)
@@ -37,8 +37,8 @@ return (NULL);
 while (j < width)
 {
 arr[i][j] = 0;
+j++;
 }
-i++;
 }
 return (arr);
 }
