@@ -44,7 +44,7 @@ z++;
 }
 for (z = 0; z < j; z++)
 {
-arr[z + i] = *(s2 + z);
+arr[z + i] = s2[z];
 }
 arr[i + j] = '\0';
 return (arr);
