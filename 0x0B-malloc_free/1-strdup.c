@@ -26,7 +26,7 @@ return (NULL);
 }
 while (j < num)
 {
-*(arr + 1) = *(str + 1);
+*(arr + j) = *(str + j);
 j++;
 }
 arr[j] = '\0';
