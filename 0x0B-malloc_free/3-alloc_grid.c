@@ -17,7 +17,7 @@ if (height <= 0 || width <= 0)
 {
 return (NULL);
 }
-arr = (int **)malloc(height * sizeof(int));
+arr = (int **)malloc(height * sizeof(int *));
 if (arr == NULL)
 {
 return (NULL);
