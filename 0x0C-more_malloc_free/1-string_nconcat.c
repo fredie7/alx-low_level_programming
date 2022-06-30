@@ -9,42 +9,33 @@
  * Return: pointer to the new space in memory or null
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
+
 {
-unsigned int m, z, size;
 char *arr;
-z = 0;
+int i;
+unsigned int j;
 if (s1 == NULL)
-{
-m = 0;
-}
-else
-{
-for (m = 0; s1[m]; m++)
-;
-}
+s1 = "";
 if (s2 == NULL)
-{
-n = 0;
-}
-else
-{
-for (n = 0; s2[n]; n++)
-;
-}
-size = m + n + 1;
-arr = malloc(size *sizeof(char));
+s2 = "";
+i = 0;
+while (s1[i] != '\0')
+i++;
+arr = malloc(sizeof(char) * (i + n + 1));
 if (arr == NULL)
-{
 return (NULL);
-}
-for (z = 0; z < m; z++)
+i = j = 0;
+while (s1[i] != '\0')
 {
-arr[z] = s1[z];
+*(arr + i) = s1[i];
+i++;
 }
-for (z = 0; z < n; z++)
+while (j < n && s2[j] != '\0')
 {
-arr[z + m] = s2[z];
+*(arr + i) = s2[j];
+i++;
+j++;
 }
-arr[m + n] = '\0';
+*(arr + i) = '\0';
 return (arr);
 }
