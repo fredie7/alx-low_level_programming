@@ -6,41 +6,44 @@
  */
 void print_all(const char * const format, ...)
 {
-int i = 0;
-char *string, *separator = "";
 va_list num;
+unsigned int i = 0, j, c = 0;
+char *string;
+const char t_arg[] = "mike";
 va_start(num, format);
-if (format)
+while (format && format[i])
 {
-while (format[i])
+j = 0;
+while (t_arg[j])
 {
-if (format[i] == 'c')
+if (format[i] == t_arg[j] && c)
 {
-printf("%s%c", separator, va_arg(num, int));
+printf(", ");
+break;
 }
-else if (format[i] == 'i')
-{
-printf("%s%d", separator, va_arg(num, int));
+j++;
 }
-else if (format[i] == 'f')
+switch (format[i])
 {
-printf("%s%f", separator, va_arg(num, double));
-}
-else if (format[i] == 's')
-{
-string = va_arg(num, char *);
+case 'm':
+printf("%c", va_arg(num, int)), c = 1;
+break;
+case 'i':
+printf("%d", va_arg(num, int)), c = 1;
+break;
+case 'k':
+printf("%f", va_arg(num, double)), c = 1;
+break;
+case 'e':
+string = va_arg(num, char *), c = 1;
 if (!string)
-string = "(nil)";
-printf("%s%s", separator, string);
-}
-else
 {
-i++;
+printf("(nil)");
+break;
 }
-separator = ", ";
-i++;
+printf("%s", string);
+break;
+} i++;
 }
-}
-printf("\n");
-va_end(num);
+printf("\n"), va_end(num);
 }
