@@ -21,7 +21,7 @@ return (0);
 va_start(args, n);
 while (i < n)
 {
-sum = va_arg(args, int);
+sum = sum + va_arg(args, int);
 va_end(args);
 i++;
 }
