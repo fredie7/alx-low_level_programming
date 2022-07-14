@@ -2,7 +2,7 @@
 
 void printItem(void) __attribute__ ((constructor));
 /**
- * printfirst - print before main
+ * printItem - print before main
  * Return: nothing
  */
 
