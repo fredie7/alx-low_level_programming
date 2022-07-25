@@ -14,8 +14,8 @@ if (filename == NULL)
 return (-1);
 if (text_content != NULL)
 {
-for (length = 0; text_content[length]; length++)
-:
+while (text_content[length])
+length++;
 }
 open_file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 write_file = write(open_file, text_content, length);
